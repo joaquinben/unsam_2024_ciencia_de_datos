@@ -1,0 +1,22 @@
+---
+title: "Presentación"
+author: "Aleksander Dietrichson"
+format: html
+editor: visual
+---
+
+## Quien soy
+
+Mi nombre Aleksander Dietrichson. Soy profesor de ciencia de datos. Soy Noruego, vivo en Buenos Aires.
+
+## Conocimientos de estadísticas
+
+Soy estadístico profesional. Conosco métodos baesianas. Promedios, Inferencia empírica, redes neuronales.
+
+## Conocimientos de lenguajes de programación
+
+R, C++, Python etc..
+
+## Tipos de proyectos
+
+Me gustan los proyectos de análisis de datos linguisticos, analizo también datos de videojuegos y trabajo mucho con datos de analiticos del aprendizaje.
