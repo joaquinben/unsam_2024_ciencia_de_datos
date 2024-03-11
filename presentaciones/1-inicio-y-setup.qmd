@@ -30,7 +30,7 @@ editor: visual
 
 -   Cada estudiante tendrá su instancia de github y su instancia de posit.cloud
 
--   Las tareas, ejercisios y demás entregables se realizarán por medio de un «pull request» al resositorio de la clase.
+-   Las tareas, ejercicios y demás entregables se realizarán por medio de un «pull request» al resositorio de la clase.
 
 ## Agenda para hoy
 
@@ -54,7 +54,7 @@ editor: visual
 
 Es un sistema de repositorio sobre todo para guarda de código
 
-Abrir una cuenta gratuida en <https://github.com/>
+Abrir una cuenta gratuita en <https://github.com/>
 
 ## Gitbub - PAT
 
@@ -140,16 +140,20 @@ Es «Personal Access Token» sirve de contraseña.
 
 ## Configurar Github
 
-![](images/Screenshot 2024-03-11 11.07.10.png)
+![](images/Screenshot%202024-03-11%2011.07.10.png)
 
 ## Configurar Github
 
 En terminal:
 
-![](images/Screenshot 2024-03-11 11.09.43.png)
+![](images/Screenshot%202024-03-11%2011.09.43.png)
 
 ## Commit y push de vuelta
 
 ![](images/hacer-commit-y-push.png)
 
 ## Agregar Usuario de Github y PAT
+
+![](images/usuario-github.png)
+
+![](images/enter-PAT.png)
