@@ -1,0 +1,18 @@
+---
+title: "presentacion 1"
+author: "Michelle WIlkinson"
+format: html
+editor: visual
+---
+
+## Quien soy
+
+Mi nombre es Michelle Wilkinson y soy estudiante de último año
+
+## Conocimiento en estadística
+
+No tengo conocimientos pero me interesa
+
+## Tipos de proyecto.
+
+Me interesan proyectos relacionados con las redes sociales..
