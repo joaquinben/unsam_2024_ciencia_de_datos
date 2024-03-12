@@ -1,7 +1,7 @@
 ---
-title: "Materiales Publicados"
+title: "My document"
 format: html
-editor: visual
+theme: darkly
 ---
 
 ## Presentaciones
