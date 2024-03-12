@@ -1,5 +1,5 @@
 ---
-title: "My document"
+title: "Publicaciones Seminario Ciencia de Datos 2024"
 format: html
 theme: darkly
 ---
