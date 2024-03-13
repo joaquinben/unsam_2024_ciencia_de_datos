@@ -1,0 +1,24 @@
+---
+title: "Presentacion"
+author: "Belen Barragan"
+format: html
+editor: visual
+---
+
+## Quien soy
+
+Mi nombre es Belen Barragán, estoy en 4/5 año de la carrera de Estudios de la Comunicacion
+
+## Conocimientos de estadistica
+
+Mis conocimuentos en estadistica se limitan a la materia "metodologia cuantitativas"
+
+## Conocimiento de lenguaje de programacion
+
+No tengo ningun conocimiento en lenguaje de programacion
+
+## Tipo de proyectos
+
+Me interesa la utilizacion optima de los datos para el desarrollo de aplicaciones, pese a no tener conocimientos al respecto por el momento.
+
+## 
