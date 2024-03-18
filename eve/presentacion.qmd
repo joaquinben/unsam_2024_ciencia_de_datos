@@ -1,0 +1,21 @@
+---
+title: "Presentacion"
+format: html
+editor: visual
+---
+
+## Quien soy
+
+Mi nombre es Evelina Fraidenraich, tengo 22 años y soy estudiante de Comunicación.
+
+## Conocimiento de estadísticas
+
+No tengo conocimiento de estadisticas, pero se que son una forma de trabajar con números para entender y explicar cosas que suceden en el mundo. Ayudan a ver patrones, tomar decisiones y saber qué esperar de ciertas situaciones, usando datos.
+
+## Conocimientos de lenguajes de programación
+
+No tengo conocimientos de lenguajes de programación
+
+## Tipos de proyectos
+
+Me gustaría trabajar en proyectos de análisis de redes sociales.

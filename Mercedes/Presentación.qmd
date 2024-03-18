@@ -1,0 +1,16 @@
+---
+title: "Presentación"
+author: "Mercedes"
+format: html
+editor: visual
+---
+
+## Quién Soy
+
+Soy Mercedes :) Estudio dos carreras (Comunicación y Actuación.
+
+## Conocimiento de estadisticas
+
+Nose nada de estadisticas.
+
+## Tipo de proyectos

@@ -1,0 +1,11 @@
+---
+title: "Publicaciones Seminario Ciencia de Datos 2024"
+format: html
+theme: darkly
+---
+
+## Presentaciones
+
+-   [Presentación de la clase 1](./presentaciones/1-inicio-y-setup.html)
+
+-   [Presentación de la clase 2](./presentaciones/2-sincronizar-repositorios-primer-codigo-y-analysis.html)
