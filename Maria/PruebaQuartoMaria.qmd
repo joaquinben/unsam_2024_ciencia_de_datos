@@ -14,19 +14,40 @@ Cruzar datos entre los nombres de unas personas y sus respectivas profesiones.
 
 ```{r}
 ## Nombres y profesiones 
-nombres <- c("matias, maite, francisco, magalí, paula")
+nombres <- c("matias", "maite", "francisco", "magalí", "paula")
 
 ```
 
 **Profesiones**
 
 ```{r}
-profesiones <- c("profesor, arquitecta, dentista, maestra, cocinera")
+profesiones <- c("profesor", "arquitecta", "dentista", "maestra", "cocinera")
 ```
 
-**Data frame de las dos variables**
+**Edades**
 
 ```{r}
-MisDatos <- data.frame(nombres, profesiones)
-print(MisDatos)
+edades <- c(15, 28, 34, 12, 3)
+```
+
+**Data frame de las variables**
+
+```{r}
+MisDatosProfesiones <- data.frame(nombres, profesiones)
+print(MisDatosProfesiones)
+```
+
+```{r}
+MisDatosEdades <- data.frame(nombres, edades)
+print(MisDatosEdades)
+```
+
+Histograma
+
+```{r}
+hist(MisDatosEdades)
+```
+
+```         
+### histograma
 ```
