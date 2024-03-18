@@ -1,13 +1,13 @@
 ---
 title: "Presentacion"
-author: "Michelle Wilkinson"
+author: "María Acha"
 format: html
 editor: visual
 ---
 
 ## Quién soy
 
-Mi nombre es Michelle Lara wilkinson Barral. Soy estudiante de quinto año de la carrera.
+Me llamo María y estudio Comunicación
 
 ## Conocimientos de estadísticas
 
