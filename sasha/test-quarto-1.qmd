@@ -1,0 +1,11 @@
+---
+title: "test"
+format: html
+editor: visual
+---
+
+## Test de R
+
+```{r}
+2+2
+```
