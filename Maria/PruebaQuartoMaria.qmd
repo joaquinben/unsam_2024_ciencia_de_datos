@@ -10,10 +10,23 @@ editor: visual
 
 Cruzar datos entre los nombres de unas personas y sus respectivas profesiones.
 
+**Nombres**
+
 ```{r}
 ## Nombres y profesiones 
 nombres <- c("matias, maite, francisco, magalí, paula")
+
+```
+
+**Profesiones**
+
+```{r}
 profesiones <- c("profesor, arquitecta, dentista, maestra, cocinera")
-df <- data.frame(nombres, profesiones)
-print(df)
+```
+
+**Data frame de las dos variables**
+
+```{r}
+MisDatos <- data.frame(nombres, profesiones)
+print(MisDatos)
 ```
