@@ -20,5 +20,9 @@ nombres_con_edad_y_ocupaciones <- data.frame(nombres,edades,ocupaciones)
 ```
 
 ```{r}
+print(my_data)
+```
+
+```{r}
 mean(edades)
 ```
