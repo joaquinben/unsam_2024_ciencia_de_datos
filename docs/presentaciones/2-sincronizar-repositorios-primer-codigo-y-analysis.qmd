@@ -62,7 +62,6 @@ Se puede ejecutar código R de varias maneras. Las más importantes son:
 
 ![](images-2/en-quarto.png)
 
-
 ## Revisar lecturas
 
 Revisemos el cápitulo 1 y 2 con ejemplos en R
@@ -70,3 +69,7 @@ Revisemos el cápitulo 1 y 2 con ejemplos en R
 ## Análisis de datos reales
 
 Vemos datos del INDEC
+
+-   <https://www.indec.gob.ar/indec/web/Institucional-Indec-BasesDeDatos>
+
+-   <https://www.indec.gob.ar/ftp/cuadros/menusuperior/eph/EPH_registro_3T2023.pdf>
