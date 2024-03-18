@@ -1,0 +1,19 @@
+---
+title: "prueba Quarto"
+format: html
+editor: visual
+---
+
+## Quarto
+
+## Nombres y profesiones
+
+Cruzar datos entre los nombres de unas personas y sus respectivas profesiones.
+
+```{r}
+## Nombres y profesiones 
+nombres <- c("matias, maite, francisco, magalí, paula")
+profesiones <- c("profesor, arquitecta, dentista, maestra, cocinera")
+df <- data.frame(nombres, profesiones)
+print(df)
+```
