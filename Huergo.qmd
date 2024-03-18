@@ -1,0 +1,33 @@
+---
+title: "Tarea 2/Huergo"
+format: html
+editor: visual
+---
+
+## Tarea 2 Huergo, algunos códigos R:
+
+```{r}
+# Estudiantes Materia Ciencia de Datos:
+nombres <- c ("Joaquin", "Evelina", "Belen", "Lautaro", "Maria", "Camila", "Geronimo", "Michelle", "Joan")
+
+print(nombres)
+```
+
+```{r}
+edades <- c(23,22,23,23,22,24,20,21,23)
+print(edades)
+```
+
+```{r}
+mean (edades)
+```
+
+```{r}
+# Año de cursada Estudiantes: 
+año <- c ("5", "5", "5", "5", "5", "5", "5", "5", "5")
+print (año)
+```
+
+```{r}
+print(my_data)
+```
