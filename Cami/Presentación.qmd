@@ -1,0 +1,18 @@
+---
+title: "Presentación"
+author: "Camila Gottschlich"
+format: html
+editor: visual
+---
+
+## Quien Soy
+
+Hola! Soy Cami, estoy en el último año de la carrera de comunicación. Soy de Buenos Aires.
+
+## Conocimiento de estadísticas
+
+No sé obsolutamente nada. De hecho, me abruma un poco. Lenguajes de programación tampoco sé.
+
+## Tipos de proyectos
+
+Me gusta todo lo relacionado con el arte y la cultura. Además, me gusta mucho escribir. Me parece muy interesante el análisis cuantitativo, aunque como mencioné arriba, todo lo relacionado con datos, me abruma.
