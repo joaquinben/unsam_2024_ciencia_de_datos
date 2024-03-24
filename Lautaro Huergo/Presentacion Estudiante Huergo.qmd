@@ -1,0 +1,17 @@
+---
+title: "Presentacion Huergo"
+format: html
+editor: visual
+---
+
+## Quien Soy
+
+Mi nombre es Lautaro Huergo estudiante del ultimo año de la carrera de Estudios de Comunicación de la UNSAM.
+
+## Conocimientos
+
+Trabaje con Python en otras materias.
+
+### Tipos de Proyectos
+
+No presento un proyecto en específico.

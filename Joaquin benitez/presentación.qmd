@@ -1,0 +1,18 @@
+---
+title: "presentación"
+author: "joaquin"
+format: html
+editor: visual
+---
+
+## Joaquin Benitez 
+
+mi nombre es Joaquin, pero me dicen "jocha" tengo 23 años y estudio licencitura en ciencias de las comunicacíon. Soy de buenos aires y ahora vivo en san fernando, zona norte.
+
+## Conocimientos de estadisticas. 
+
+nulo, ninguno, pero me gustaria aprender.
+
+### Tipos de proyectos.
+
+Me gusta la musica y me interesaria que algun proyecto o alguna entrega para la materia este orientado por esa tematica.

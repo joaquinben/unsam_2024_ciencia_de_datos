@@ -1,0 +1,43 @@
+---
+title: "Presentación"
+author: "Joan Fiszlejder"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+# Quién soy
+
+Soy Joan Fiszlejder, vivo en Buenos Aires y estoy cursando la carrera de comunicación hace 5 años.
+
+## Conocimientos de estadísticas
+
+La realidad es que no tengo mucho conocimiento al respecto.
+
+Para la materia Metodologías Cuantitativas trabajamos con google collab. Mi Trabajo práctico se basó en agarrar archivos de libre acceso de la página del ministerio de economía argentino para hacer gráficos y comparar los presupuestos de cada año.
+
+Después en la materia de TICS hice un mapa de redes sociales con Onodo en base a un trabajo de investigación de árboles genealógicos de familias de la elite argentina.
+
+### ¿Qué me interesa?
+
+Me interesaría conocer más acerca de como trabajar con datos reales ya sea del gobierno, de empresas, etc.
