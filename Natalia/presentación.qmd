@@ -15,7 +15,7 @@ Conozco un poco de Python, muy básico.
 
 ### Tipos de proyectos
 
-Me interesaría trabajar o saber como se hace para establecer apartir de los datos, como se selecciona el público deseado para una campaña de difusión.
+Me interesaría trabajar o saber como se hacer para establecer a partir de los datos, como se selecciona el público deseado para una campaña de difusión.
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
