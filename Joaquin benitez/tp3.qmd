@@ -1,0 +1,17 @@
+---
+title: "benitez tp 2"
+format: html
+editor: visual
+---
+
+## Ejemplo: Amigos Falsos
+
+```{r}
+amigos <- c("Joaquin", "Evelina", "Joan", "Geronimo", "Agustina")
+es_falso<- c(TRUE, FALSE, FALSE,TRUE,FALSE)
+df_amigos <- data.frame(Amigo= amigos, Es_Falso= es_falso)
+print(df_amigos)
+
+```
+
+## Histograma
