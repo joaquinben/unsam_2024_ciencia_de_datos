@@ -4,6 +4,6 @@ CODSU:Esta variables es categórica (c) ya que representa codigos para distingir
 
 NRO_HOGAR: Tambien es categorica (N) ya que representa codigos para distingir hogares. Es discreta, ya que los valores son enteros y no fracciones. al igual que CODSU no poseé un nivel de medicion especifica.
 
-REALIZADA: Es categorica (N) ya que representa la realizacion o no de una entrevista. en este caso podria tratarse de una como una variable dicótomica, donde "si" representa un valor y "no" representa otro valor. Es discreta ya que se puede contabilizar el numero de veces que se responde "si" o "no", pero no posee valores intermedios. 
+REALIZADA: Es categorica (N) ya que representa la realizacion o no de una entrevista. en este caso podria tratarse de una como una variable, donde "si" representa un valor y "no" representa otro valor. Es discreta ya que se puede contabilizar el numero de veces que se responde "si" o "no", pero no posee valores intermedios. 
 
 ANO4: Esta variable es numerica (N) ya que presenta el año de relevamiento con valores de 4 digitos. Es discreta, ya que los años son valores enteros y no fracciones. Ademas es variable de intervalo, ya que hay una distancia entre cada año, pero no tiene un punto cero absoluto. 
