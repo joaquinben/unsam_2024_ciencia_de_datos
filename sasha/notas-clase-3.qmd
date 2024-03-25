@@ -133,7 +133,7 @@ print(mis_variables)
 
 Variable ya computada de decil del ingreso. Ordinal. Es discreta
 
-#### REALIZADA 
+#### REALIZADA
 
 Variable nominal (codigo 1 = si 0 = no) . Discreta.
 
