@@ -1,5 +1,6 @@
 ---
-title: "Test de Quarto"
+title: "Notas de la clase 1"
+theme: darkly
 format: html
 editor: visual
 ---

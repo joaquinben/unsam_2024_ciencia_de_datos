@@ -9,3 +9,11 @@ theme: darkly
 -   [Presentación de la clase 1](./presentaciones/1-inicio-y-setup.html)
 
 -   [Presentación de la clase 2](./presentaciones/2-sincronizar-repositorios-primer-codigo-y-analysis.html)
+
+-   [Presentación de la clase 3](./presentaciones/3-centralizacion-y-dispersión.html)
+
+## Notas
+
+-   [Notas de la clase 1](./notas/clase-1-notas.html)
+
+-   [Notas de la clase 2](./notas/clase-2-hacer-histograma.html)
