@@ -1,0 +1,163 @@
+---
+title: "Notas de la clase 1"
+theme: darkly
+format: html
+editor: visual
+---
+
+## Codigo R intercalado
+
+```{r}
+1 + 1
+```
+
+Se puede intercalar código. con **Control+Alt+I**
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## Algunos operadores
+
+```{r}
+2-1
+2*2
+2/2
+```
+
+## Las commillas
+
+Se usan simples y dobles( " y '). Las francesas («») no se usan.
+
+Primer comando util que es *print* se usa asi:
+
+```{r}
+print(2+2)
+print(3+2)
+
+```
+
+Observar El uso de Los parentesis.
+
+```{r}
+print("Hola estoy trabajando en R")
+print('Es lo mismo con comillas simples')
+```
+
+```{r}
+# print(hola estoy trabajando)
+```
+
+El hashtag en código invalida la linea. Esto tiene dos usos (principales)
+
+1.  Invalidar código que no anda para dignosticarlo
+2.  Hacer comentarios dentro del codigo.
+
+## Variables en R
+
+Hay numericas, character, Booleanos.
+
+Las variables pueden ser simples o pueden ser vectores. Un vector es básicamente lo mismo que una columna en excell.
+
+Se asigna variable con \<- (o eventualment con =)
+
+```{r}
+
+x <- 1
+y <- 2
+print(x+y)
+
+# Otro comando util
+sum(y)
+```
+
+```{r}
+x2 <- c(10,12,30,22,4)
+# Funcion c  es de "combinar"
+print(x2)
+sum(x2)
+```
+
+```{r}
+edades <- c(20,22,25,30,23,24,20)
+print(edades)
+```
+
+```{r}
+print(edades[2])
+```
+
+```{r}
+mean(edades)
+```
+
+Las variables tambien pueden ser de tipo character. Pero entonces el valor tiene que ir entre comillas:
+
+```{r}
+nombre <- "Sasha"
+print(nombre)
+```
+
+Variables de character en vector (columna)
+
+```{r}
+nombres <- c("Sasha", "María","Jorge","Camila", "Evelina", "Joan","Joaquín")
+
+
+print(nombres)
+
+print(nombres[4])
+```
+
+```{r}
+print(nombres[c(1,7)])
+```
+
+Combinar datos en data.frame (hoja de calculo)
+
+```{r}
+my_data <- data.frame(nombres,edades)
+nombres_con_edad <- data.frame(nombres,edades)
+```
+
+```{r}
+# Disponible por posición
+print(my_data[3,1])
+print(my_data[3,2])
+
+# También, más cómodo, por nombre de las columnas
+print(my_data$edades)
+print(my_data$edades[3])
+print(my_data$edades[c(2,4)])
+
+
+```
+
+## Las variables pueden ser booleanos
+
+"Booleano" significa que es falso o cierto. En es TRUE/FALSE
+
+```{r}
+x <- 1
+y <- 2
+iguales <- (x == y)
+print(iguales)
+
+```
+
+```{r}
+# Una materia de unsam es virtual o no lo es
+
+es_virtual<- c(TRUE, FALSE, FALSE)
+
+nombre_de_curso <- c("Ciencia de datos", "Literatura", "Educación Física")
+
+mis_cursos <- data.frame(nombre_de_curso, es_virtual)
+```
+
+```{r}
+print(mis_cursos)
+```
