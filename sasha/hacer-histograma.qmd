@@ -1,0 +1,34 @@
+---
+title: "Hacer Histogramas"
+format: html
+editor: visual
+---
+
+## Hacer histograma
+
+```{r}
+nombres <- c("Sasha", "María","Jorge","Camila", "Evelina", "Joan","Joaquín")
+edades <- c(20,22,25,30,23,24,20)
+my_data <- data.frame(nombres,edades)
+```
+
+### Verificando
+
+```{r}
+print(my_data)
+```
+
+```{r}
+hist(my_data$edades)
+```
+
+## Tarea para el 25-03-2024
+
+1.  Realizar un histograma de una de las columnas del data.frame que armaron en el ejecicio.
+2.  Eligir 4 variables del conjunto de datos de Indec:<https://www.indec.gob.ar/ftp/cuadros/menusuperior/eph/EPH_registro_3T2023.pdf>
+
+-   Qué tipo de variable es:
+
+    -   Cúal es su nivel de medición
+
+    -   Es contínua o discreta
