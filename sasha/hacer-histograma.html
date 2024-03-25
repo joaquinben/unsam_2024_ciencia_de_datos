@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publicaciones Seminario Ciencia de Datos 2024</title>
+<title>Hacer Histogramas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,19 +20,53 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="hacer-histograma_files/libs/clipboard/clipboard.min.js"></script>
+<script src="hacer-histograma_files/libs/quarto-html/quarto.js"></script>
+<script src="hacer-histograma_files/libs/quarto-html/popper.min.js"></script>
+<script src="hacer-histograma_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="hacer-histograma_files/libs/quarto-html/anchor.min.js"></script>
+<link href="hacer-histograma_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="hacer-histograma_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="hacer-histograma_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="hacer-histograma_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="hacer-histograma_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 
 
 </head>
@@ -45,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Publicaciones Seminario Ciencia de Datos 2024</h1>
+<h1 class="title">Hacer Histogramas</h1>
 </div>
 
 
@@ -62,18 +96,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="presentaciones" class="level2">
-<h2 class="anchored" data-anchor-id="presentaciones">Presentaciones</h2>
-<ul>
-<li><p><a href="./presentaciones/1-inicio-y-setup.html">Presentación de la clase 1</a></p></li>
-<li><p><a href="./presentaciones/2-sincronizar-repositorios-primer-codigo-y-analysis.html">Presentación de la clase 2</a></p></li>
-</ul>
+<section id="hacer-histograma" class="level2">
+<h2 class="anchored" data-anchor-id="hacer-histograma">Hacer histograma</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>nombres <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Sasha"</span>, <span class="st">"María"</span>,<span class="st">"Jorge"</span>,<span class="st">"Camila"</span>, <span class="st">"Evelina"</span>, <span class="st">"Joan"</span>,<span class="st">"Joaquín"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>edades <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">20</span>,<span class="dv">22</span>,<span class="dv">25</span>,<span class="dv">30</span>,<span class="dv">23</span>,<span class="dv">24</span>,<span class="dv">20</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(nombres,edades)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="verificando" class="level3">
+<h3 class="anchored" data-anchor-id="verificando">Verificando</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(my_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  nombres edades
+1   Sasha     20
+2   María     22
+3   Jorge     25
+4  Camila     30
+5 Evelina     23
+6    Joan     24
+7 Joaquín     20</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(my_data<span class="sc">$</span>edades)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hacer-histograma_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="notas" class="level2">
-<h2 class="anchored" data-anchor-id="notas">Notas</h2>
+</section>
+<section id="tarea-para-el-25-03-2024" class="level2">
+<h2 class="anchored" data-anchor-id="tarea-para-el-25-03-2024">Tarea para el 25-03-2024</h2>
+<ol type="1">
+<li>Realizar un histograma de una de las columnas del data.frame que armaron en el ejecicio.</li>
+<li>Eligir 4 variables del conjunto de datos de Indec:<a href="https://www.indec.gob.ar/ftp/cuadros/menusuperior/eph/EPH_registro_3T2023.pdf" class="uri">https://www.indec.gob.ar/ftp/cuadros/menusuperior/eph/EPH_registro_3T2023.pdf</a></li>
+</ol>
 <ul>
-<li><p><a href="./notas/clase-1-notas.html">Notas de la clase 1</a></p></li>
-<li><p><a href="./notas/clase-2-hacer-histograma.html">Notas de la clase 2</a></p></li>
+<li><p>Qué tipo de variable es:</p>
+<ul>
+<li><p>Cúal es su nivel de medición</p></li>
+<li><p>Es contínua o discreta</p></li>
+</ul></li>
 </ul>
 </section>
 

@@ -1,0 +1,23 @@
+---
+title: "Revisión de la teoría"
+author: "Aleksander Dietrichson, PhD"
+format:
+  revealjs: 
+    theme: dark
+    chalkboard: true
+editor: visual
+---
+
+## Agenda de hoy
+
+-   El concepto de variable
+
+    -   en estadística
+
+    -   en lenguajes de programación
+
+-   Centralización y Dispersión
+
+-   Trabajar con `tidyverse`
+
+-   
