@@ -1,7 +1,8 @@
 ---
-title: "Analisis Inicial Datos Indec"
+title: "Análisis Inicial Datos Indec"
 author: "Aleksander Dietrichson"
 format: html
+theme: darkly
 editor: visual
 ---
 
@@ -17,7 +18,7 @@ library(tidyverse)
 ## Cargamos los datos
 
 ```{r}
-my_data <- read_rds("../data/datos_indec.rds")
+my_data <- read_rds(here::here("data/datos_indec.rds"))
 ```
 
 REGION N (2) Código de región 01 = Gran Buenos Aires 40 = Noroeste 41 = Noreste 42 = Cuyo 43 = Pampeana 44 = Patagonia
