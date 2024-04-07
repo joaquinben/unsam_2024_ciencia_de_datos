@@ -32,3 +32,81 @@ Mis_datos
                       
 
 ```
+
+# Conceptos de variables
+
+variables estadisticas:
+
+nominal - discretas
+
+Ej: sexo (F,M), nombre, DNI (pueden sumarlo)
+
+ordinal - discretas
+
+ej: star -rating
+
+intervalo
+
+ej: temperatura
+
+razon (ratio o racional)
+
+ej: edad, ingreso, numero de hijos
+
+```{r}
+sexo <- c(f,m,f,m)
+nombre <- c(mara,juan,dana,carlos)
+temperatura_en_buenos_aires <- sample(20:30, size = 20)
+cociente_de_inteligencia <- rnorm(1000,100,15)
+head(cociente_de_inteligencia)
+hist(cociente_de_inteligencia)
+rnorm(cociente_de_inteligencia)
+
+
+```
+
+## Centralización
+
+la media - ratio/intervalo
+
+la mediana - ratio/intervalo
+
+la moda - nominales ++ ordinales
+
+```{r}
+edades <- c(20,20,20,20,20,20,20,20,25,51)
+mean(edades)
+
+```
+
+```{r}
+sueldos <- c(100000,100000,100000,100000,100000,100000,500000)
+mean(sueldos)
+median(sueldos)
+options(scipen = 999)
+median(sueldos)
+table(edades)
+
+```
+
+```{r}
+problemas <- problemas(my_data)
+print(problemas)
+library(tidyverse)
+my_data <- read-delim
+
+```
+
+```{r}
+library(tidyverse)
+my_data <- read_rds("../data/datos_indec.rds")
+
+unique(my_data$REGION)
+nrow(my_data)
+filtrado <- filter(my_data, REGION == 44)
+nrow(filtrado)
+```
+
+### 
+
+### 
