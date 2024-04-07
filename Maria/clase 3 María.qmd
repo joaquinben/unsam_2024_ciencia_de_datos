@@ -24,7 +24,7 @@ hist(edades)
 table(edades)
 ```
 
-Dispersión
+**Dispersión**
 
 ```{r}
 mean(edades)
@@ -33,7 +33,7 @@ sd(edades)
 
 sd: desviación estándar
 
-Mad
+**Mad**
 
 desviación mediana absoluta. es menos sensible a valores extremos.
 
@@ -41,7 +41,7 @@ desviación mediana absoluta. es menos sensible a valores extremos.
 mad(edades)
 ```
 
-Rango
+**Rango**
 
 valos más alto y valor más bajo
 
@@ -55,8 +55,61 @@ range(edades)
 ```
 
 \
-Datos del INDEC
+**Datos del INDEC**
 
 ```{r}
 library(tidyverse)
+my_data <- read_delim("../data/usu_hogar_T323.txt", delim = ";")
+```
+
+```{r}
+problemas <- problems(my_data)
+print(problemas)
+```
+
+```{r}
+my_data <- read_delim("../data/usu_hogar_T323.txt", delim = ";", guess_max = 10000)
+```
+
+```{r}
+write_rds(my_data,file = "../data/datos_indec.rds")
+```
+
+**Tarea clase 3**
+
+```{r}
+mis_variables <- sample(names(my_data),size = 4)
+print(mis_variables)
+```
+
+#### IDECCFR
+
+Variable ya computada de decil del ingreso. Ordinal. Es discreta
+
+#### REALIZADA
+
+Variable nominal (codigo 1 = si 0 = no) . Discreta.
+
+#### II4_1 «tiene cuarto de baño»
+
+Variable nominal (si/no). Discreta.
+
+```{r}
+my_data <- read_rds("../data/datos_indec.rds")
+```
+
+tomamos un parámetro
+
+```{r}
+nombres <- c("sasha", "maria","jorge")
+table(nombres)
+```
+
+```{r}
+
+```
+
+```{r}
+my_data$REGION |> 
+  unique() 
 ```
