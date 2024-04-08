@@ -1,5 +1,5 @@
 ---
-title: "Revisión de la teoría"
+title: "Método cientifico. Manipulación de datos."
 author: "Aleksander Dietrichson, PhD"
 format: 
   revealjs: 
@@ -12,193 +12,98 @@ editor: visual
 
 ## Agenda de hoy
 
--   El concepto de variable
+-   El método científico
 
-    -   en estadística (y otras disciplinas)
+    -   Formular hipótesis
 
-    -   en lenguajes de programación
+    -   Estrategia de evaluación
 
--   Centralización y Dispersión
+    -   La hipótesis nula y alternativas
 
--   Instalar y acceder al `tidyverse`
+-   Manipular datos con `dplyr`
 
--   Aplicar conceptos a los datos del Indec
+-   VIsualizar datos con ggplot2
 
-## Variables: Estadística
+## Método científico
 
--   Nominal
+-   Karl Popper
 
-    -   Ej: Sexo (M/F), nombre, DNI (¿podés sumarlos?)
+-   Sostiene que no podemos tener certezas sobre fenómenos medibles sino un nivel (medible) de dudas.
 
--   Ordinal
+-   Pensamiento deductivo. Ciencias empíricas (basados en datos).
 
-    -   Ej: «star-rating»
+-   Las teorías deben ser refutables.
 
--   Intervalo
+## Formular hipótesis
 
-    -   Temperatura
+-   ¿cuál es mi teoría?
 
--   Razón (Ratio o racional)
+-   ¿es refutable?
 
-    -   Ej: Edad, ingreso, numero de hijos
+-   ¿cuales son las hipótesis falsificables que puedo sacar de la teoría?
 
-## Variables nominales en R
+-   ¿cómo la evaluo?
 
-Se expresan con vectores de tipo character (eventualmente factor)
+## Estrategia de evaluación de hipótesis
 
-```{r}
-sexo <- c("M","F","M","F")
-nombre <- c("Jorge","Marìa","Jorge","Cecilia")
-```
+-   ¿cómo lo vamos a medir cuantitativamente aquello que estamos estudiando?
 
-Se pueden armar tablas de frecuencias con `table`
+-   ¿De dónde vienen los datos?
 
-```{r}
-table(sexo)
-```
+-   ¿cómo se refuta mi teoría?
 
-```{r}
-table(nombre)
-```
+## La hipótesis nula y alternativas
 
-## Variables nominales en R
+Usando datos empíricos nunca podemos afirmar nada con absoluta certeza. A lo que podemos aspirar es afirmarlo con cierto nivel de confianza y estimar este nivel. Para ello usamos la hipótesis nula y la alternativa.
 
-Se pueden visualizar con p.ej. `barplot`
+1.  Asumo que mi teoría es **incorrecta**. Esta es mi hipótesis nula.
+2.  Mi(s) hipótesis alternativa(s) son las que uso si resulta que puedo refutar mi hipótesis nula.
 
-::: columns
-::: {.column width="50%"}
-```{r}
-barplot(table(sexo))
-```
-:::
+## Ejemplo
 
-::: {.column width="50%"}
-```{r}
-barplot(table(nombre))
-```
-:::
-:::
+Mi teoría es que los hombres son más altos que las mujeres.
 
-## Variables ordinales en R
+-   Hipótesis nula: No hay diferencia de estatura entre hombres y mujeres
 
-Se pueden expresar como vectores de characteres con niveles asignados.
+-   Hipótesis alternativa: Los hombres son más altos
 
-```{r}
-ratings <- c("muy bueno","muy  bueno","muy  bueno","bueno","regular",
-             "regular","malo","malo","muy malo")
-```
+Notación formal:
 
-Para saber qué es mejor/peor se arma una variable de tipo `factor` con los niveles y `ordered = TRUE`
+$$
+H_0: \mu(M) = \mu(H) \\
+H_A: \mu(M) < \mu(H) 
+$$
 
-```{r}
-rating_con_niveles <- 
-  factor(ratings, 
-         levels = c("muy bueno","bueno", "regular", "malo", "muy malo"), #en orden acá
-         ordered = TRUE)
-```
+## Notación formal
 
-## Variables ordinales en R
+También se usa $H_1$ (y $H_2$, $H_3$ etc.) especialmente si tenemos varias alternativas.
 
-y visualizar
+Asimismo es común describirlo en prosa sin notación:
 
-```{r}
-barplot(table(rating_con_niveles))
-```
+> «nuestra hipótesis nula es que no existe diferencia en estatura entre los dos grupos y la alternativa que los hombres son más altos»
 
-A veces se expresan con números (rating 1 a 5) lo cual puede resultar confuso. La clasificación es **conceptual.**
+## Manipular datos con dplyr
 
-## Variables de intervalo en R
+-   Seleccionar columnas con `select`
 
-Se expresan generalmente con `numeric`
+-   Seleccionar filas con `filter`
 
-```{r}
-temperatura_en_buenos_aires <- sample(20:30, size = 20, replace = 2)
-```
+    -   diferencia entre `==` e `=`
 
-Y se pueden visualizar como histograma
+    -   Uso de `!=` y `!` en código
 
-```{r}
-hist(temperatura_en_buenos_aires)
-```
+-   Renombrar columnas
 
-Por qué el de intervalo?
+-   Crear columnas nuevas
 
-## Variables de ratio en R
+-   Cambiar etiquetas de datos categóricos
 
-Se expresan con numérico en R.
+-   El uso de pipe `|>` y `%>%`
 
-```{r}
-cociente_de_intelligencia <- rnorm(1000,100,15)
-```
+## Visualizar datos con ggplot2
 
-```{r}
-head(cociente_de_intelligencia)
-```
+-   Función `ggplot`
 
-## Variables de ratio en R
+-   Función `aes`
 
-Y se visualizan con histograma
-
-```{r}
-hist(cociente_de_intelligencia)
-```
-
-## Centralización
-
-Contesta a la pregunta: ¿cuál es el valor más típico del conjunto?
-
-Las principales son:
-
--   La media
-
--   La mediana
-
--   La moda
-
-## Centralización
-
-Contesta a la pregunta: ¿cuál es el valor más típico del conjunto?
-
-Las principales son:
-
--   La media: Intervalo y ratio
-
--   La mediana: Intervalo y ratio
-
--   La moda: Nominales y ordinales
-
-## Dispersión
-
-Contesta a la pregunta: ¿cuán típico es el valor más típico?
-
--   La desviación estándar
-
--   Desviación mediana absoluta (mad)
-
--   Rango
-
--   Rango intercuartílico
-
--   y muchos otros...
-
-## Tidyverse
-
-Es un conjunto de packetes que vamos a usar para análisis de datos
-
-se instala con:
-
-```{r}
-install.packages("tidyverse")
-```
-
-desde la consola.
-
-## Datos del indec
-
-Revisamos la tarea a ver qué variables vamos a analizar.
-
--   ¿Como llamarlos?
-
--   ¿Hay que transformar alguna?
-
--   ¿Qué preguntas podemos hacer?
+-   los `geom_`

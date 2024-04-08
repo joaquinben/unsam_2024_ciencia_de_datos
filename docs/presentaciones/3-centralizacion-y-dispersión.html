@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.550">
 
   <meta name="author" content="Aleksander Dietrichson, PhD">
-  <title>Revisión de la teoría</title>
+  <title>Método cientifico. Manipulación de datos.</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,71 +29,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-      }
-    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-    div.sourceCode
-      { color: #f8f8f2;  }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #f8f8f2; } /* Normal */
-    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
-    code span.an { color: #d4d0ab; } /* Annotation */
-    code span.at { color: #00e0e0; } /* Attribute */
-    code span.bn { color: #d4d0ab; } /* BaseN */
-    code span.bu { color: #abe338; } /* BuiltIn */
-    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #abe338; } /* Char */
-    code span.cn { color: #ffd700; } /* Constant */
-    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
-    code span.cv { color: #ffd700; } /* CommentVar */
-    code span.do { color: #f8f8f2; } /* Documentation */
-    code span.dt { color: #ffa07a; } /* DataType */
-    code span.dv { color: #d4d0ab; } /* DecVal */
-    code span.er { color: #f07178; text-decoration: underline; } /* Error */
-    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
-    code span.fl { color: #d4d0ab; } /* Float */
-    code span.fu { color: #ffa07a; } /* Function */
-    code span.im { color: #abe338; } /* Import */
-    code span.in { color: #d4d0ab; } /* Information */
-    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
-    code span.op { color: #ffa07a; } /* Operator */
-    code span.ot { color: #00e0e0; } /* Other */
-    code span.pp { color: #dcc6e0; } /* Preprocessor */
-    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
-    code span.sc { color: #abe338; } /* SpecialChar */
-    code span.ss { color: #abe338; } /* SpecialString */
-    code span.st { color: #abe338; } /* String */
-    code span.va { color: #00e0e0; } /* Variable */
-    code span.vs { color: #abe338; } /* VerbatimString */
-    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="3-centralizacion-y-dispersión_files/libs/revealjs/dist/theme/quarto.css">
   <link href="3-centralizacion-y-dispersión_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -393,7 +328,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Revisión de la teoría</h1>
+  <h1 class="title">Método cientifico. Manipulación de datos.</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -407,196 +342,92 @@ Aleksander Dietrichson, PhD
 <section id="agenda-de-hoy" class="slide level2">
 <h2>Agenda de hoy</h2>
 <ul>
-<li><p>El concepto de variable</p>
+<li><p>El método científico</p>
 <ul>
-<li><p>en estadística (y otras disciplinas)</p></li>
-<li><p>en lenguajes de programación</p></li>
+<li><p>Formular hipótesis</p></li>
+<li><p>Estrategia de evaluación</p></li>
+<li><p>La hipótesis nula y alternativas</p></li>
 </ul></li>
-<li><p>Centralización y Dispersión</p></li>
-<li><p>Instalar y acceder al <code>tidyverse</code></p></li>
-<li><p>Aplicar conceptos a los datos del Indec</p></li>
+<li><p>Manipular datos con <code>dplyr</code></p></li>
+<li><p>VIsualizar datos con ggplot2</p></li>
 </ul>
 </section>
-<section id="variables-estadística" class="slide level2">
-<h2>Variables: Estadística</h2>
+<section id="método-científico" class="slide level2">
+<h2>Método científico</h2>
 <ul>
-<li><p>Nominal</p>
-<ul>
-<li>Ej: Sexo (M/F), nombre, DNI (¿podés sumarlos?)</li>
-</ul></li>
-<li><p>Ordinal</p>
-<ul>
-<li>Ej: «star-rating»</li>
-</ul></li>
-<li><p>Intervalo</p>
-<ul>
-<li>Temperatura</li>
-</ul></li>
-<li><p>Razón (Ratio o racional)</p>
-<ul>
-<li>Ej: Edad, ingreso, numero de hijos</li>
-</ul></li>
+<li><p>Karl Popper</p></li>
+<li><p>Sostiene que no podemos tener certezas sobre fenómenos medibles sino un nivel (medible) de dudas.</p></li>
+<li><p>Pensamiento deductivo. Ciencias empíricas (basados en datos).</p></li>
+<li><p>Las teorías deben ser refutables.</p></li>
 </ul>
 </section>
-<section id="variables-nominales-en-r" class="slide level2">
-<h2>Variables nominales en R</h2>
-<p>Se expresan con vectores de tipo character (eventualmente factor)</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a>sexo <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"M"</span>,<span class="st">"F"</span>,<span class="st">"M"</span>,<span class="st">"F"</span>)</span>
-<span id="cb1-2"><a href="" aria-hidden="true" tabindex="-1"></a>nombre <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Jorge"</span>,<span class="st">"Marìa"</span>,<span class="st">"Jorge"</span>,<span class="st">"Cecilia"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Se pueden armar tablas de frecuencias con <code>table</code></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(sexo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>sexo
-F M 
-2 2 </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(nombre)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>nombre
-Cecilia   Jorge   Marìa 
-      1       2       1 </code></pre>
-</div>
-</div>
-</section>
-<section id="variables-nominales-en-r-1" class="slide level2">
-<h2>Variables nominales en R</h2>
-<p>Se pueden visualizar con p.ej. <code>barplot</code></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(<span class="fu">table</span>(sexo))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="3-centralizacion-y-dispersión_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(<span class="fu">table</span>(nombre))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="3-centralizacion-y-dispersión_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="variables-ordinales-en-r" class="slide level2">
-<h2>Variables ordinales en R</h2>
-<p>Se pueden expresar como vectores de characteres con niveles asignados.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="" aria-hidden="true" tabindex="-1"></a>ratings <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"muy bueno"</span>,<span class="st">"muy  bueno"</span>,<span class="st">"muy  bueno"</span>,<span class="st">"bueno"</span>,<span class="st">"regular"</span>,</span>
-<span id="cb8-2"><a href="" aria-hidden="true" tabindex="-1"></a>             <span class="st">"regular"</span>,<span class="st">"malo"</span>,<span class="st">"malo"</span>,<span class="st">"muy malo"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Para saber qué es mejor/peor se arma una variable de tipo <code>factor</code> con los niveles y <code>ordered = TRUE</code></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a>rating_con_niveles <span class="ot">&lt;-</span> </span>
-<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="fu">factor</span>(ratings, </span>
-<span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a>         <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"muy bueno"</span>,<span class="st">"bueno"</span>, <span class="st">"regular"</span>, <span class="st">"malo"</span>, <span class="st">"muy malo"</span>), <span class="co">#en orden acá</span></span>
-<span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a>         <span class="at">ordered =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="variables-ordinales-en-r-1" class="slide level2">
-<h2>Variables ordinales en R</h2>
-<p>y visualizar</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(<span class="fu">table</span>(rating_con_niveles))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="3-centralizacion-y-dispersión_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"><p>A veces se expresan con números (rating 1 a 5) lo cual puede resultar confuso. La clasificación es <strong>conceptual.</strong></p>
-</section>
-<section id="variables-de-intervalo-en-r" class="slide level2">
-<h2>Variables de intervalo en R</h2>
-<p>Se expresan generalmente con <code>numeric</code></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a>temperatura_en_buenos_aires <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">20</span><span class="sc">:</span><span class="dv">30</span>, <span class="at">size =</span> <span class="dv">20</span>, <span class="at">replace =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Y se pueden visualizar como histograma</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(temperatura_en_buenos_aires)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="3-centralizacion-y-dispersión_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"><p>Por qué el de intervalo?</p>
-</section>
-<section id="variables-de-ratio-en-r" class="slide level2">
-<h2>Variables de ratio en R</h2>
-<p>Se expresan con numérico en R.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a>cociente_de_intelligencia <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>,<span class="dv">100</span>,<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cociente_de_intelligencia)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 103.21571  98.14639  96.21471 105.85513 136.59330  83.87971</code></pre>
-</div>
-</div>
-</section>
-<section id="variables-de-ratio-en-r-1" class="slide level2">
-<h2>Variables de ratio en R</h2>
-<p>Y se visualizan con histograma</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(cociente_de_intelligencia)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="3-centralizacion-y-dispersión_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
-<section id="centralización" class="slide level2">
-<h2>Centralización</h2>
-<p>Contesta a la pregunta: ¿cuál es el valor más típico del conjunto?</p>
-<p>Las principales son:</p>
+<section id="formular-hipótesis" class="slide level2">
+<h2>Formular hipótesis</h2>
 <ul>
-<li><p>La media</p></li>
-<li><p>La mediana</p></li>
-<li><p>La moda</p></li>
+<li><p>¿cuál es mi teoría?</p></li>
+<li><p>¿es refutable?</p></li>
+<li><p>¿cuales son las hipótesis falsificables que puedo sacar de la teoría?</p></li>
+<li><p>¿cómo la evaluo?</p></li>
 </ul>
 </section>
-<section id="centralización-1" class="slide level2">
-<h2>Centralización</h2>
-<p>Contesta a la pregunta: ¿cuál es el valor más típico del conjunto?</p>
-<p>Las principales son:</p>
+<section id="estrategia-de-evaluación-de-hipótesis" class="slide level2">
+<h2>Estrategia de evaluación de hipótesis</h2>
 <ul>
-<li><p>La media: Intervalo y ratio</p></li>
-<li><p>La mediana: Intervalo y ratio</p></li>
-<li><p>La moda: Nominales y ordinales</p></li>
+<li><p>¿cómo lo vamos a medir cuantitativamente aquello que estamos estudiando?</p></li>
+<li><p>¿De dónde vienen los datos?</p></li>
+<li><p>¿cómo se refuta mi teoría?</p></li>
 </ul>
 </section>
-<section id="disperción" class="slide level2">
-<h2>Disperción</h2>
-<p>Contesta a la pregunta: ¿cuán típico es el valor más típico?</p>
+<section id="la-hipótesis-nula-y-alternativas" class="slide level2">
+<h2>La hipótesis nula y alternativas</h2>
+<p>Usando datos empíricos nunca podemos afirmar nada con absoluta certeza. A lo que podemos aspirar es afirmarlo con cierto nivel de confianza y estimar este nivel. Para ello usamos la hipótesis nula y la alternativa.</p>
+<ol type="1">
+<li>Asumo que mi teoría es <strong>incorrecta</strong>. Esta es mi hipótesis nula.</li>
+<li>Mi(s) hipótesis alternativa(s) son las que uso si resulta que puedo refutar mi hipótesis nula.</li>
+</ol>
+</section>
+<section id="ejemplo" class="slide level2">
+<h2>Ejemplo</h2>
+<p>Mi teoría es que los hombres son más altos que las mujeres.</p>
 <ul>
-<li><p>La desviación estándar</p></li>
-<li><p>Desviación mediana absoluta (mad)</p></li>
-<li><p>Rango</p></li>
-<li><p>Rango intercuartílico</p></li>
-<li><p>y muchos otros…</p></li>
+<li><p>Hipótesis nula: No hay diferencia de estatura entre hombres y mujeres</p></li>
+<li><p>Hipótesis alternativa: Los hombres son más altos</p></li>
+</ul>
+<p>Notación formal:</p>
+<p><span class="math display">\[
+H_0: \mu(M) = \mu(H) \\
+H_A: \mu(M) &lt; \mu(H)
+\]</span></p>
+</section>
+<section id="notación-formal" class="slide level2">
+<h2>Notación formal</h2>
+<p>También se usa <span class="math inline">\(H_1\)</span> (y <span class="math inline">\(H_2\)</span>, <span class="math inline">\(H_3\)</span> etc.) especialmente si tenemos varias alternativas.</p>
+<p>Asimismo es común describirlo en prosa sin notación:</p>
+<blockquote>
+<p>«nuestra hipótesis nula es que no existe diferencia en estatura entre los dos grupos y la alternativa que los hombres son más altos»</p>
+</blockquote>
+</section>
+<section id="manipular-datos-con-dplyr" class="slide level2">
+<h2>Manipular datos con dplyr</h2>
+<ul>
+<li><p>Seleccionar columnas con <code>select</code></p></li>
+<li><p>Seleccionar filas con <code>filter</code></p>
+<ul>
+<li><p>diferencia entre <code>==</code> e <code>=</code></p></li>
+<li><p>Uso de <code>!=</code> y <code>!</code> en código</p></li>
+</ul></li>
+<li><p>Renombrar columnas</p></li>
+<li><p>Crear columnas nuevas</p></li>
+<li><p>Cambiar etiquetas de datos categóricos</p></li>
+<li><p>El uso de pipe <code>|&gt;</code> y <code>%&gt;%</code></p></li>
 </ul>
 </section>
-<section id="tidyverse" class="slide level2">
-<h2>Tidyverse</h2>
-<p>Es un conjunto de packetes que vamos a usar para análisis de datos</p>
-<p>se instala con:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>desde la consola.</p>
-</section>
-<section id="datos-del-indec" class="slide level2">
-<h2>Datos del indec</h2>
-<p>Revisamos la tarea a ver qué variables vamos a analizar.</p>
+<section id="visualizar-datos-con-ggplot2" class="slide level2">
+<h2>Visualizar datos con ggplot2</h2>
 <ul>
-<li><p>¿Como llamarlos?</p></li>
-<li><p>¿Hay que transformar alguna?</p></li>
-<li><p>¿Qué preguntas podemos hacer?</p></li>
+<li><p>Función <code>ggplot</code></p></li>
+<li><p>Función <code>aes</code></p></li>
+<li><p>los <code>geom_</code></p></li>
 </ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -816,44 +647,6 @@ Cecilia   Jorge   Marìa
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
