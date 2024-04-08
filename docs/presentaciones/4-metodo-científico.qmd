@@ -1,5 +1,5 @@
 ---
-title: "Método cientifico. Manipulación de datos."
+title: "Método científico. Manipulación de datos."
 author: "Aleksander Dietrichson, PhD"
 format: 
   revealjs: 
