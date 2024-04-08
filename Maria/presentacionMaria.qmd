@@ -7,7 +7,7 @@ editor: visual
 
 ## Quién soy
 
-Me llamo María y estudio Comunicación. Estoy en la UNSAM desde 2021.
+Me llamo María y soy estudiante de Comunicación. Estoy en la UNSAM desde 2021.
 
 ## Conocimientos de estadísticas
 
